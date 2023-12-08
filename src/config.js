@@ -16,6 +16,9 @@ const CONFIG = {
   /* */
   REDIS_HOST: process.env.REDIS_HOST,
   REDIS_PORT: process.env.REDIS_PORT,
+  /* */
+  URL_EXPIRY: 86400000 * 7, // expiry => 7 days
+  URL_CACHE_EXPIRY: 60 * 10, // expiry => 10 mins
 };
 
 module.exports = CONFIG;
